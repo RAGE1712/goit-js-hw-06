@@ -1,7 +1,7 @@
 const itemCategories = document.querySelectorAll(".item")
 console.log(`Number of categories: ${itemCategories.length}`)
 
-itemCategories.forEach((category,i) => {
+itemCategories.forEach((category) => {
     const header = category.querySelector("h2")
     console.log("");
     console.dir(`Category: ${header.textContent}`)
