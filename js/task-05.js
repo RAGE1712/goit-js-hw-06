@@ -4,6 +4,7 @@ let span = document.querySelector("span#name-output");
 input.addEventListener("input", handleInput)
 
 function handleInput(event) {
-    const name = event.currentTarget.value;
-    span.textContent = name.trim();
+    if (event.currentTarget.value.trim() !== "") {
+        span.textContent = event.currentTarget.value;
+    } else { span.textContent = "Anonymous"; }
 }
